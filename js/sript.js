@@ -4,40 +4,40 @@ const products = {
     {
         name: 'piggy + shortcake',
         images: [
-            '../img/slider/pink/pink_1.webp',
-            '../img/slider/pink/pink_2.webp',
-            '../img/slider/pink/pink_3.webp',
-            '../img/slider/pink/pink_4.webp',
+            './img/slider/pink/pink_1.webp',
+            './img/slider/pink/pink_2.webp',
+            './img/slider/pink/pink_3.webp',
+            './img/slider/pink/pink_4.webp',
         ]
     },
     peach:
     {
         name: 'freckle + peach pit',
         images: [
-            '../img/slider/peach/peach_1.webp',
-            '../img/slider/peach/peach_2.webp',
-            '../img/slider/peach/peach_3.webp',
-            '../img/slider/peach/peach_4.webp',
+            './img/slider/peach/peach_1.webp',
+            './img/slider/peach/peach_2.webp',
+            './img/slider/peach/peach_3.webp',
+            './img/slider/peach/peach_4.webp',
         ],
     },
     coral:
     {
         name: 'spicy marg + guava spritz',
         images: [
-            '../img/slider/coral/coral_1.webp',
-            '../img/slider/coral/coral_2.webp',
-            '../img/slider/coral/coral_3.webp',
-            '../img/slider/coral/coral_4.webp',
+            './img/slider/coral/coral_1.webp',
+            './img/slider/coral/coral_2.webp',
+            './img/slider/coral/coral_3.webp',
+            './img/slider/coral/coral_4.webp',
         ],
     },
     mauve:
     {
         name: 'sleepy girl + salty tan',
         images: [
-            '../img/slider/mauve/mauve_1.webp',
-            '../img/slider/mauve/mauve_2.webp',
-            '../img/slider/mauve/mauve_3.webp',
-            '../img/slider/mauve/mauve_4.webp',
+            './img/slider/mauve/mauve_1.webp',
+            './img/slider/mauve/mauve_2.webp',
+            './img/slider/mauve/mauve_3.webp',
+            './img/slider/mauve/mauve_4.webp',
         ],
     },
 };
