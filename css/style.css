@@ -781,3 +781,188 @@ ol {
         display: flex;
     }
 }
+
+/***notify.css***/
+.notifications {
+    position: fixed;
+    top: 1.5%;
+    right: 1%;
+    max-width: 340px;
+    z-index: 2000;
+    overflow: hidden;
+}
+.notifications__items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.notifications__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #e2dede;
+    padding: 6px 0px;
+    margin-top: 5px;
+}
+.notifications__item__img {
+    max-width: 53px;
+    margin: 0 2px 0 6px;
+}
+.notifications__item__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+.notifications__item__content {
+    padding: 0 5px;
+}
+.notifications__item__content__header {
+    font-size: 11px;
+}
+.notifications__item-name {
+    font-weight: bold;
+}
+.notifications__item-address {
+    text-decoration: underline;
+}
+.notifications__item__content__desc {
+    font-size: 16px;
+    font-weight: 500;
+    color: #134094;
+}
+.notifications__item__content__bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.notifications__item__time {
+    font-size: 13px;
+}
+.notifications__item__icons {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+}
+.notifications__item__icons img {
+    position: absolute;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+    -webkit-animation: checIn 3s cubic-bezier(1, -1.23, 0.49, 1.56);
+    animation: checIn 3s cubic-bezier(1, -1.23, 0.49, 1.56);
+}
+.notifications__item__btn {
+    margin: 0 10px 0 5px;
+}
+.notifications__item__btn-close {
+    vertical-align: inherit;
+}
+
+.hiddenNoty {
+    animation-name: hiddenNoty;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    -webkit-animation-name: hiddenNoty;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+}
+
+.showNoty {
+    animation-name: showNoty;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    -webkit-animation-name: showNoty;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes checIn {
+    0% {
+        top: 50px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+
+@keyframes checIn {
+    0% {
+        top: 50px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@-webkit-keyframes hiddenNoty {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes hiddenNoty {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@-webkit-keyframes showNoty {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes showNoty {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .comments_face .img-gift-box img {
+        width: 300px;
+    }
+    .notifications {
+        padding-left: 3px;
+    }
+    .notifications__item__content__desc {
+        font-size: 14px;
+    }
+    .notifications__item__img {
+        max-width: 40px;
+        margin: 0 2px 0 4px;
+    }
+}

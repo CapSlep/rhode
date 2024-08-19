@@ -3,6 +3,8 @@ const products = {
     pink:
     {
         name: 'piggy + shortcake',
+        title: 'the pink duo',
+        text: 'Pocket Blush in Piggy and Peptide Lip Tint in Shortcake',
         images: [
             './img/slider/pink/pink_1.webp',
             './img/slider/pink/pink_2.webp',
@@ -13,6 +15,8 @@ const products = {
     peach:
     {
         name: 'freckle + peach pit',
+        title: 'the peach duo',
+        text: 'Pocket Blush in Freckle and Peptide Lip Tint in Peach Pit',
         images: [
             './img/slider/peach/peach_1.webp',
             './img/slider/peach/peach_2.webp',
@@ -23,6 +27,8 @@ const products = {
     coral:
     {
         name: 'spicy marg + guava spritz',
+        title: 'the coral duo',
+        text: 'Pocket Blush in Spicy Marg and Peptide Lip Tint in Guava Spritz',
         images: [
             './img/slider/coral/coral_1.webp',
             './img/slider/coral/coral_2.webp',
@@ -33,6 +39,8 @@ const products = {
     mauve:
     {
         name: 'sleepy girl + salty tan',
+        title: 'the mauve duo',
+        text: 'Pocket Blush in Sleepy Girl and Peptide Lip Tint in Salty Tan',
         images: [
             './img/slider/mauve/mauve_1.webp',
             './img/slider/mauve/mauve_2.webp',
@@ -78,9 +86,15 @@ function updateSlider() {
 
 }
 
-function updateName() {
+function updateTexts() {
     const selectedName = document.getElementById('selectedName');
     selectedName.innerText = chosenProduct.name;
+
+    const selectedTitle = document.querySelector('.product__header');
+    selectedTitle.innerText = chosenProduct.title;
+
+    const selectedText = document.getElementById('changingText');
+    selectedText.innerText = chosenProduct.text;
 }
 
 function bindSwitchers() {
@@ -99,7 +113,7 @@ function bindSwitchers() {
     const clickHandler = (event, selectedAttribute) => {
         event.preventDefault();
         updateSlider();
-        updateName();
+        updateTexts();
         // Re-render the pagination bullets with the new images
         swiper.pagination.render();
         swiper.pagination.update();
@@ -142,7 +156,7 @@ function bindSwitchers() {
         }
     });
     updateSlider();
-    updateName();
+    updateTexts();
 }
 bindSwitchers();
 
